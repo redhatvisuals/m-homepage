@@ -5,51 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>還沒想好研究室｜M鴿角色官網</title>
 <style>
+ html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fefaf4;
+  }
+
   body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: url("images/m-homepage.jpg") no-repeat center center / cover;
-  color: #333;
-  min-height: 100vh;
-}
+    background-image: url("images/m-homepage.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; /* 不裁切背景圖 */
+  }
 
-.content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 12px;
-  box-sizing: border-box;
-}
+  .content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0); /* 手機不遮住背景圖 */
+  }
 
-h1 {
-  font-size: 2.4em;
-  text-align: center;
-}
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
 
-p {
-  font-size: 1.2em;
-  line-height: 1.8;
-  text-align: center;
-}
+  p {
+    font-size: 1.2em;
+    line-height: 1.8;
+  }
 
-.cta {
-  margin-top: 2em;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+  .cta {
+    margin-top: 2em;
+  }
 
-.cta button {
-  font-size: 1em;
-  padding: 0.8em 1.5em;
-  background-color: #c84e4e;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  max-width: 90vw;
-}
+  .cta button {
+    font-size: 1em;
+    padding: 0.8em 1.8em;
+    border: none;
+    background-color: #d9534f;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .cta button:hover {
+    background-color: #c9302c;
+  }
+
+  footer {
+    margin-top: 2em;
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      background-size: contain; /* 手機避免裁切 */
+    }
+
+    .cta button {
+      width: 100%;
+      max-width: 280px;
+      font-size: 1em;
+    }
+  }
 </style>
 </head>
 <body>

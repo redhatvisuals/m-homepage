@@ -6,85 +6,65 @@
   <title>還沒想好研究室｜M鴿角色官網</title>
 <style>
   body {
-    margin: 0;
-    font-family: "Segoe UI", sans-serif;
-    background: url("images/m-homepage.jpg") no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #333;
-  }
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url("images/m-homepage.jpg") no-repeat center center / cover;
+  color: #333;
+  min-height: 100vh;
+}
 
-  .content {
-    max-width: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 2em;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.85);
-    margin: 0 auto;
-  }
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
 
-  h1 {
-    font-size: 2.4em;
-  }
+h1 {
+  font-size: 2.4em;
+  text-align: center;
+}
 
-  p {
-    font-size: 1.2em;
-    line-height: 1.8;
-  }
+p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  text-align: center;
+}
 
-  .cta {
-    margin-top: 2em;
-  }
+.cta {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .cta button {
-    background-color: #d9534f;
-    color: white;
-    border: none;
-    padding: 1em 2em;
-    font-size: 1em;
-    border-radius: 30px;
-    cursor: pointer;
-    max-width: 90%;
-    word-break: break-word;
-  }
-
-  footer {
-    margin-top: 2em;
-    font-size: 0.9em;
-  }
-
-  /* 📱 手機版調整 */
-  @media (max-width: 768px) {
-    .content {
-      padding: 1.5em 1em;
-    }
-
-    h1 {
-      font-size: 1.8em;
-    }
-
-    p {
-      font-size: 1em;
-    }
-
-    .cta button {
-      font-size: 0.95em;
-      padding: 0.8em 1.2em;
-    }
-  }
+.cta button {
+  font-size: 1em;
+  padding: 0.8em 1.5em;
+  background-color: #c84e4e;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  max-width: 90vw;
+}
 </style>
 </head>
 <body>
-  <div class="content">
-    <h1>這裡是還沒想好研究室</h1>
-    <p>
-      我是 <strong style="color:#d1574a">M鴿</strong>，這個網站目前…呃…還沒想好，
-      但先把門打開了。<br>
-      我會慢慢把我的研究報告、角色卡、觀察筆記放進來…
-    </p>
-    <button class="cta">我也還沒想好，但我想看看！</button>
-    <footer>© 2025 還沒想好研究室．Certified by 鴿點頭協會 🕊️</footer>
+<div class="content">
+  <h1>這裡是還沒想好研究室</h1>
+  <p>我是 <strong style="color:#c84e4e;">M 鴿</strong>，這個網站目前...呃...還沒想好，但先把門打開了<br>
+     我會慢慢把我的研究報告、角色卡、觀察筆記放進來...</p>
+
+  <div class="cta">
+    <button>我也還沒想好，但我想看看！</button>
   </div>
+
+  <p style="font-size: 0.9em; margin-top: 3em;">
+    © 2025 還沒想好研究室 · Certified by 鴿點頭協會 🕊️
+  </p>
+</div>
 </body>
 </html>

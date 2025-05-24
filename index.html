@@ -4,69 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>還沒想好研究室｜M鴿角色官網</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: url("images/m-homepage.jpg") no-repeat center center;
-      background-size: cover;
-      background-attachment: fixed;
-      color: #333;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: url("images/m-homepage.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+  }
 
+  .content {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2.4em;
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.8;
+  }
+
+  .cta {
+    margin-top: 2em;
+  }
+
+  .cta button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    max-width: 90%;
+    word-break: break-word;
+  }
+
+  footer {
+    margin-top: 2em;
+    font-size: 0.9em;
+  }
+
+  /* 📱 手機版調整 */
+  @media (max-width: 768px) {
     .content {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 2em;
-      background-color: rgba(255, 255, 255, 0.85);
-      border-radius: 12px;
-      text-align: center;
-      box-sizing: border-box;
+      padding: 1.5em 1em;
     }
 
     h1 {
-      font-size: 2.2em;
-      margin-bottom: 0.5em;
+      font-size: 1.8em;
     }
 
     p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin: 1em 0;
-    }
-
-    .cta {
-      display: inline-block;
-      margin-top: 1.5em;
-      padding: 0.6em 1.4em;
       font-size: 1em;
-      color: white;
-      background-color: #d1574a;
-      border: none;
-      border-radius: 999px;
-      cursor: pointer;
-      white-space: nowrap;
-      max-width: 90vw;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
 
-    footer {
-      margin-top: 2em;
-      font-size: 0.9em;
-      color: #444;
+    .cta button {
+      font-size: 0.95em;
+      padding: 0.8em 1.2em;
     }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.6em;
-      }
-      .cta {
-        font-size: 0.95em;
-        padding: 0.6em 1.2em;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
   <div class="content">

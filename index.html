@@ -1,94 +1,124 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>還沒想好研究室｜M鴿角色官網</title>
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: "Segoe UI", sans-serif;
-    background-color: #fefaf4;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>這裡是還沒想好研究室</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  body {
-    background-image: url("images/m-homepage.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain; /* 不裁切背景圖 */
-  }
-
-  .content {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 2em;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0); /* 手機不遮住背景圖 */
-  }
-
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-  }
-
-  p {
-    font-size: 1.2em;
-    line-height: 1.8;
-  }
-
-  .cta {
-    margin-top: 2em;
-  }
-
-  .cta button {
-    font-size: 1em;
-    padding: 0.8em 1.8em;
-    border: none;
-    background-color: #d9534f;
-    color: white;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .cta button:hover {
-    background-color: #c9302c;
-  }
-
-  footer {
-    margin-top: 2em;
-    font-size: 0.9em;
-    color: #555;
-  }
-
-  @media (max-width: 768px) {
     body {
-      background-size: contain; /* 手機避免裁切 */
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #fdfaf4;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1024px;
+      padding: 1rem;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      background: url('images/m-homepage.jpg') no-repeat center center/contain;
+      aspect-ratio: 16 / 9;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0.5em 0;
+    }
+
+    p {
+      margin: 0.5em 0;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .cta {
+      margin-top: 1rem;
     }
 
     .cta button {
-      width: 100%;
-      max-width: 280px;
-      font-size: 1em;
+      padding: 0.6em 1.2em;
+      font-size: 1rem;
+      background-color: #d9534f;
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background-color 0.3s;
     }
-  }
-</style>
+
+    .cta button:hover {
+      background-color: #c9302c;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .overlay {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .cta button {
+        font-size: 0.9rem;
+        padding: 0.5em 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="content">
-  <h1>這裡是還沒想好研究室</h1>
-  <p>我是 <strong style="color:#c84e4e;">M 鴿</strong>，這個網站目前...呃...還沒想好，但先把門打開了<br>
-     我會慢慢把我的研究報告、角色卡、觀察筆記放進來...</p>
-
-  <div class="cta">
-    <button>我也還沒想好，但我想看看！</button>
+  <div class="container">
+    <div class="hero">
+      <div class="overlay">
+        <h1>這裡是還沒想好研究室</h1>
+        <p>我是 <strong style="color: #d9534f;">M 鴿</strong>，這個網站目前⋯呃⋯還沒想好，但先把門打開了</p>
+        <p>我會慢慢把我的研究報告、角色卡、觀察筆記放進來⋯⋯</p>
+        <div class="cta">
+          <button>我也還沒想好，但我想看看！</button>
+        </div>
+        <div class="footer">
+          © 2025 還沒想好研究室・Certified by 鴿點頭協會 🕊️
+        </div>
+      </div>
+    </div>
   </div>
-
-  <p style="font-size: 0.9em; margin-top: 3em;">
-    © 2025 還沒想好研究室 · Certified by 鴿點頭協會 🕊️
-  </p>
-</div>
 </body>
 </html>

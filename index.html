@@ -3,76 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>還沒想好研究室</title>
+  <title>這裡是還沒想好研究室</title>
   <style>
-    * {
-      box-sizing: border-box;
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #fdfaf3;
       margin: 0;
       padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fdfaf3;
-      color: #333;
       text-align: center;
     }
 
-    .hero {
-      width: 100%;
-      max-width: 100%;
-    }
-
-    .hero img {
-      width: 100vw;
-      height: auto;
-      display: block;
-    }
-
-    .content {
-      padding: 2em 1em;
-      max-width: 720px;
+    .container {
+      max-width: 800px;
       margin: 0 auto;
+      padding: 1em;
     }
 
-    h1 {
-      font-size: 1.6em;
-      margin-bottom: 0.5em;
+    .main-image {
+      width: 100%;
+      height: auto;
+      max-width: 100vw;
     }
 
-    p {
-      margin-bottom: 1em;
-      font-size: 1em;
-      line-height: 1.6em;
-    }
-
-    .btn {
+    .button-red {
       display: inline-block;
-      background-color: #cc5c4f;
+      background-color: #de5f51;
       color: white;
-      padding: 0.8em 1.4em;
-      border-radius: 1.4em;
+      padding: 0.8em 1.5em;
+      border-radius: 30px;
+      font-size: 1rem;
       text-decoration: none;
-      font-weight: bold;
-      font-size: 1em;
+      max-width: 300px;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      margin-top: 1em;
     }
 
     footer {
+      font-size: 0.9em;
+      color: #888;
       margin-top: 2em;
-      font-size: 0.8em;
-      color: #666;
     }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <img src="images/m-homepage.jpg" alt="還沒想好研究室主視覺">
-  </div>
-  <div class="content">
+  <img src="images/m-homepage.jpg" alt="這裡是還沒想好研究室" class="main-image">
+
+  <div class="container">
     <h1>這裡是還沒想好研究室</h1>
-    <p>我是 <strong style="color:#cc3333">M鴿</strong>，這個網站目前…呃…還沒想好，但先把門打開了<br>
-    我會慢慢把我的研究報告、角色卡、觀察筆記放進來…</p>
-    <a class="btn" href="#">我也還沒想好，但我想看看！</a>
+    <p>我是 <strong style="color:#c33">M鴿</strong>，這個網站目前⋯呃⋯還沒想好，但先把門打開了<br>
+    我會慢慢把我的研究報告、角色卡、觀察筆記放進來⋯</p>
+
+    <a href="#" class="button-red">我也還沒想好，但我想看看！</a>
+
     <footer>
       <p>© 2025 還沒想好研究室・Certified by 鴿點頭協會 🕊️</p>
     </footer>

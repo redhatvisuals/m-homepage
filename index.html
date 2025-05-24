@@ -4,53 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>這裡是還沒想好研究室</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fdfbf7;
-      text-align: center;
-      color: #333;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: url("images/m-homepage.jpg") no-repeat center center / cover;
+    color: #333;
+  }
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 1em;
-    }
+  .content {
+    max-width: 1000px; /* 電腦版最大寬度不要太窄 */
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+  }
 
-    .hero-img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: auto;
-    }
+  .cta {
+    margin-top: 2em;
+  }
 
-    .cta {
-      margin-top: 1.5em;
-    }
+  .cta button {
+    background-color: #db4c3f;
+    color: white;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    white-space: nowrap;
+  }
 
-    .cta a {
-      background: #cc574f;
-      color: #fff;
-      padding: 0.8em 1.6em;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: background 0.2s ease-in-out;
-    }
+  .cta button:hover {
+    background-color: #c94438;
+  }
 
-    .cta a:hover {
-      background: #b8413a;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 2em;
+  @media (max-width: 600px) {
+    .cta button {
       font-size: 0.9em;
-      color: #999;
+      padding: 0.6em 1.5em;
     }
-  </style>
+
+    .content {
+      padding: 1.5em;
+    }
+  }
+</style>
 </head>
 <body>
   <div class="container">

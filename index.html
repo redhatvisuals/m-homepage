@@ -2,123 +2,107 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>這裡是還沒想好研究室</title>
   <style>
     * {
       box-sizing: border-box;
     }
 
-    body {
+    body, html {
       margin: 0;
+      padding: 0;
       font-family: "Segoe UI", sans-serif;
-      background: #fdfaf4;
-      color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1024px;
-      padding: 1rem;
+      background-color: #fdfaf5;
     }
 
     .hero {
-      position: relative;
       width: 100%;
-      background: url('images/m-homepage.jpg') no-repeat center center/contain;
+      max-width: 100%;
+      background: url("images/m-homepage.jpg") no-repeat center center;
+      background-size: contain;
+      background-color: #fdfaf5;
       aspect-ratio: 16 / 9;
     }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    .content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      padding: 1.5rem;
+      justify-content: center;
+      padding: 1em;
+      margin: 0 auto;
+      max-width: 800px;
       text-align: center;
-      background-color: rgba(255, 255, 255, 0);
     }
 
     h1 {
-      font-size: 2rem;
-      margin: 0.5em 0;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
     }
 
     p {
-      margin: 0.5em 0;
-      font-size: 1rem;
-      line-height: 1.6;
+      font-size: 1em;
+      margin-bottom: 1em;
     }
 
     .cta {
-      margin-top: 1rem;
-    }
-
-    .cta button {
-      padding: 0.6em 1.2em;
-      font-size: 1rem;
-      background-color: #d9534f;
+      background-color: #d3544f;
       color: #fff;
+      padding: 0.6em 1.2em;
+      font-size: 1em;
       border: none;
-      border-radius: 999px;
+      border-radius: 2em;
       cursor: pointer;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
     }
 
-    .cta button:hover {
-      background-color: #c9302c;
+    .cta:hover {
+      background-color: #b8453f;
     }
 
-    .footer {
-      margin-top: 2rem;
-      font-size: 0.8rem;
-      color: #666;
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      margin-top: 2em;
+      color: #555;
     }
 
     @media (max-width: 768px) {
-      .overlay {
-        padding: 1rem;
+      .hero {
+        background-size: cover;
+        aspect-ratio: auto;
+        height: auto;
+        min-height: 300px;
       }
 
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
       }
 
-      p {
-        font-size: 0.9rem;
-      }
-
-      .cta button {
-        font-size: 0.9rem;
+      .cta {
+        font-size: 0.9em;
         padding: 0.5em 1em;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="hero">
-      <div class="overlay">
-        <h1>這裡是還沒想好研究室</h1>
-        <p>我是 <strong style="color: #d9534f;">M 鴿</strong>，這個網站目前⋯呃⋯還沒想好，但先把門打開了</p>
-        <p>我會慢慢把我的研究報告、角色卡、觀察筆記放進來⋯⋯</p>
-        <div class="cta">
-          <button>我也還沒想好，但我想看看！</button>
-        </div>
-        <div class="footer">
-          © 2025 還沒想好研究室・Certified by 鴿點頭協會 🕊️
-        </div>
-      </div>
-    </div>
+
+  <div class="hero"></div>
+
+  <div class="content">
+    <h1>這裡是還沒想好研究室</h1>
+    <p>我是 <strong style="color:#c0392b;">M鴿</strong>，這個網站目前…呃…還沒想好，但先把門打開了<br>
+      我會慢慢把我的研究報告、角色卡、觀察筆記放進來…</p>
+
+    <button class="cta">我也還沒想好，但我想看看！</button>
+
+    <footer>
+      © 2025 還沒想好研究室・Certified by 鴿點頭協會 🕊️
+    </footer>
   </div>
+
 </body>
 </html>

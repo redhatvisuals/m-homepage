@@ -1,85 +1,99 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>這裡是還沒想好研究室</title>
- <style>
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Noto Sans TC', sans-serif;
-}
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      overflow-x: hidden;
+    }
 
-.hero {
-  background-image: url("images/m-homepage.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5vh 2rem;
-}
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
 
-.content {
-  background-color: rgba(255,255,255,0.85);
-  padding: 2rem;
-  border-radius: 1rem;
-  max-width: 700px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
+    .container img.bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.0); /* 透明 */
+    }
 
-p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
 
-.highlight {
-  color: #b60000;
-  font-weight: bold;
-}
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
 
-.cta {
-  background-color: #d85c4a;
-  color: white;
-  font-size: 1rem;
-  border: none;
-  padding: 0.8rem 1.6rem;
-  border-radius: 2rem;
-  cursor: pointer;
-  margin-bottom: 1rem;
-}
+    .btn {
+      display: inline-block;
+      background-color: #d45b52;
+      color: #fff;
+      padding: 0.8em 1.5em;
+      border-radius: 999px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 1em;
+    }
 
-footer {
-  font-size: 0.85rem;
-  color: #444;
-}
-</style>
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #555;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <div class="hero"></div>
-
-  <div class="content">
-    <h1>這裡是還沒想好研究室</h1>
-    <p>我是 <strong style="color:#c0392b;">M鴿</strong>，這個網站目前…呃…還沒想好，但先把門打開了<br>
-      我會慢慢把我的研究報告、角色卡、觀察筆記放進來…</p>
-
-    <button class="cta">我也還沒想好，但我想看看！</button>
-
-    <footer>
-      © 2025 還沒想好研究室・Certified by 鴿點頭協會 🕊️
-    </footer>
+  <div class="container">
+    <img src="images/m-homepage.jpg" alt="背景圖片" class="bg">
+    <div class="content">
+      <h1>這裡是還沒想好研究室</h1>
+      <p>我是 <strong style="color:#d30000">M鴿</strong>，這個網站目前⋯呃⋯還沒想好，但先把門打開了<br>
+        我會慢慢把我的研究報告、角色卡、觀察筆記放進來⋯</p>
+      <a href="#" class="btn">我也還沒想好，但我想看看！</a>
+      <footer>© 2025 還沒想好研究室・Certified by 鴿點頭協會 🕊️</footer>
+    </div>
   </div>
-
 </body>
 </html>
